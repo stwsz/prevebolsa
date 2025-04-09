@@ -1,17 +1,17 @@
 import React from 'react';
 
+import LogoPrevebolsa from './../assets/logos/LogoPrevebolsa.webp';
+
 const Header = () => {
   return (
     <header>
-        <img src="./../assets/logos/LogoPrevebolsa.webp" alt="" />
+        <img src={LogoPrevebolsa} alt="Logo PreveBolsa" />
 
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Sobre</li>
+            <li>Como Funciona</li>
+            <li>Prever Bolsa</li>
+            <li>Estatísticas</li>
         </ul>
     </header>
   );

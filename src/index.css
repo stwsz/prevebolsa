@@ -1,10 +1,11 @@
 :root {
-  --color-base: #f2f2f2;
+  --color-base: #fff;
   --color-base-dark: #444444;
   --color-primary: #38558b;
   --color-secondary: #fdc143;
 
-  --font-size-small: 12px;
+  --font-size-xsmall: 12px;
+  --font-size-small: 14px;
   --font-size-medium: 16px;
   --font-size-large: 20px;
 }
@@ -29,7 +30,28 @@ a {
   text-decoration: none;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--font-size-small);
+  font-weight: 600;
+}
+
+header img {
+  width: 280px;
+}
+
+header ul {
+  display: flex;
+  gap: 3rem;
+}
+
 footer {
+  font-size: var(--font-size-small);
   background-color: var(--color-primary);
   color: var(--color-base);
   padding: 2rem 2rem 0rem 2rem;
@@ -40,7 +62,7 @@ footer {
 }
 
 footer img {
-  width: 280px;
+  width: 220px;
 }
 
 #footer-container {
@@ -67,10 +89,10 @@ footer img {
 }
 
 footer p {
+  font-size: var(--font-size-xsmall);
   width: 100vw;
   text-align: center;
   padding: 1rem 0;
   background-color: var(--color-base-dark);
-  font-size: var(--font-size-small);
   font-weight: 600;
 }
