@@ -3,8 +3,6 @@ import Footer from "../components/Footer";
 import React, { useState } from "react";
 import '../styles/prever-bolsa.css';
 
-import { Link } from "react-router-dom";
-
 function PreverBolsa() {
   document.title = "PreveBolsa | Prever Bolsa";
 

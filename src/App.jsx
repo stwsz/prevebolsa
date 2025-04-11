@@ -25,11 +25,11 @@ function App() {
             <p>Descubra suas chances reais de conquistar uma bolsa de estudos com base em dados históricos, análises inteligentes e informações que refletem a realidade do processo seletivo.</p>
 
             <div id='div-intro-links'>
-              <Link to='/PreverBolsa'>
+              <Link to='/prever-bolsa'>
                 Prever bolsa
               </Link>
 
-              <Link to='/ComoFunciona'>
+              <Link to='/como-funciona'>
                 Como funciona?
               </Link>
             </div>
