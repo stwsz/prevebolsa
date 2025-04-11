@@ -1,3 +1,5 @@
+@import './home.css';
+
 :root {
   --color-base: #fff;
   --color-base-dark: #444444;
@@ -48,6 +50,10 @@ header img {
 header ul {
   display: flex;
   gap: 3rem;
+}
+
+header ul li a {
+  color: var(--color-base-dark);
 }
 
 footer {

@@ -1,17 +1,40 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom'; 
+
 import LogoPrevebolsa from './../assets/logos/LogoPrevebolsa.webp';
 
 const Header = () => {
   return (
     <header>
-        <img src={LogoPrevebolsa} alt="Logo PreveBolsa" />
-
+        <Link to='/'>
+          <img src={LogoPrevebolsa} alt="Logo PreveBolsa" />
+        </Link>
+        
         <ul>
-            <li>Sobre</li>
-            <li>Como Funciona</li>
-            <li>Prever Bolsa</li>
-            <li>Estatísticas</li>
+            <li>
+              <Link to='/sobre'>
+                Sobre
+              </Link>
+            </li>
+
+            <li>
+              <Link to='/como-funciona'>
+                Como Funciona
+              </Link>
+            </li>
+
+            <li>
+              <Link to='/prever-bolsa'>
+                Prever Bolsa
+              </Link>
+            </li>
+
+            <li>
+              <Link to='/estatisticas'>
+                Estatísticas
+              </Link> 
+            </li>
         </ul>
     </header>
   );
