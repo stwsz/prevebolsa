@@ -34,7 +34,7 @@ hr {
     margin: 0 auto;
 }
 
-#como-funciona {
+#funcionamento {
     width: 75%;
     margin: 0 auto;
     display: flex;
@@ -42,30 +42,30 @@ hr {
     gap: 1rem;
 }
 
-#como-funciona h2 {
+#funcionamento h2 {
     font-size: 1.4rem;
     font-weight: 700;
 }
 
-#como-funciona div {
+#funcionamento div {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-#como-funciona div ul {
+#funcionamento div ul {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-#como-funciona div ul li {
+#funcionamento div ul li {
     display: flex;
     align-items: center;
     font-weight: 600;
 }
 
-#como-funciona div ul li img {
+#funcionamento div ul li img {
     width: 50px;
     height: 50px;
     margin-right: 1rem;

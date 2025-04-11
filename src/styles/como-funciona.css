@@ -1,0 +1,30 @@
+#como-funciona {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0rem 0rem 2rem 0rem;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+#como-funciona section {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#como-funciona section h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+#como-funciona section div ul {
+    font-weight: 600;
+}
+
+#como-funciona section div ul li {
+    font-weight: 400;
+}
+

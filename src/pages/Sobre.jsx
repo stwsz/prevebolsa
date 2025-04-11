@@ -29,7 +29,7 @@ function Sobre() {
 
         <hr />
 
-        <section id='como-funciona'>
+        <section id='funcionamento'>
           <h2>Como funciona a previsão?</h2>
 
           <div>
