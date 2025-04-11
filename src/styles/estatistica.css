@@ -1,0 +1,53 @@
+#estatisticas-page {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: #fefefe;
+    border-radius: 12px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
+  }
+  
+  #estatisticas-page h1 {
+    text-align: center;
+    font-size: 32px;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+  
+  .intro {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 3rem;
+    color: #333;
+  }
+  
+  .estatisticas-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .card h2 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+    color: var(--color-base-dark);
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.4;
+  }

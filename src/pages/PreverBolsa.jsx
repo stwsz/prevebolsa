@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import React, { useState } from "react";
-import '../styles/PreverBolsa.css';
+import '../styles/prever-bolsa.css';
 
 import { Link } from "react-router-dom";
 
