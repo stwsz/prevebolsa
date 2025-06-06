@@ -1,5 +1,3 @@
-import React from "react";
-
 import regiao from "../assets/images/região.png";
 import idade from "../assets/images/idade.png";
 import genero from "../assets/images/gênero.png";
@@ -14,8 +12,6 @@ import top1013 from "../assets/images/top103.png";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../styles/estatistica.css";
-
-import { Link } from "react-router-dom";
 
 function Estatisticas() {
   document.title = "PreveBolsa | Estatísticas";

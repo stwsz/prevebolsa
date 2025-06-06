@@ -1,7 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './styles/index.css'
+import './styles/index.css';
+import { LanguageProvider } from './contexts/LanguageContext.jsx';
 
 import App from './App.jsx';
 import ComoFunciona from './pages/ComoFunciona.jsx';
@@ -11,7 +12,8 @@ import Estatisticas from './pages/Estatisticas.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Router>
+    <LanguageProvider>
+      <Router>
       <Routes>
         <Route path='/' element={<App />} />
         <Route path='/como-funciona' element={<ComoFunciona />} />
@@ -20,5 +22,6 @@ createRoot(document.getElementById('root')).render(
         <Route path='/estatisticas' element={<Estatisticas />} />
       </Routes>
     </Router>
+    </LanguageProvider>
   </StrictMode>
 )

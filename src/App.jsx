@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Link } from 'react-router-dom'; 
 
 import Header from './components/Header';
@@ -11,8 +9,12 @@ import FormularioIcon from './../src/assets/icons/formulario.webp'
 import UniversidadeIcon from './../src/assets/icons/universidade.webp'
 import LupaIcon from './../src/assets/icons/lupa.webp';
 
+import { useLanguage } from './hooks/useLanguage';
+
 function App() {
   document.title = 'PreveBolsa | Bem-vindo à Página Inicial';
+
+  const { t } = useLanguage();
 
   return (
     <>
@@ -20,27 +22,27 @@ function App() {
       <main id='home-page'>
         <section id='intro'>
           <div id='div-intro'>
-            <h1>Bem-vindo ao PreveBolsa!</h1>
+            <h1>{t('mainPageText1')}</h1>
 
-            <p>Descubra suas chances reais de conquistar uma bolsa de estudos com base em dados históricos, análises inteligentes e informações que refletem a realidade do processo seletivo.</p>
+            <p>{t('mainPageText2')}</p>
 
             <div id='div-intro-links'>
               <Link to='/prever-bolsa'>
-                Prever bolsa
+                {t('mainPageText3')}
               </Link>
 
               <Link to='/como-funciona'>
-                Como funciona?
+                {t('mainPageText4')}
               </Link>
             </div>
           </div>
 
-          <img src={StudentImage} alt="Ilustração de estudante" />
+          <img src={StudentImage} alt={t('mainPageAltText1')} />
         </section>
 
         <section id='info'>
           <div id='div-info'>
-            <img src={ProuniImage} alt="Logo do PROUNI" />
+            <img src={ProuniImage} alt={'mainPageAltText2'} />
 
             <div>
               <p>O PreveBolsa é uma ferramenta gratuita que analisa informações do ProUni 2017 para te ajudar a prever suas chances de conseguir uma bolsa, seja integral ou parcial.
